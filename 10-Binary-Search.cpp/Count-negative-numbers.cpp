@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 
-int searchInsert(int arr[],int size){
+int countNegative(int arr[],int size){
+    
     int start = 0, end = size - 1;
     int mid = start + (end-start)/2;
     
@@ -21,7 +22,7 @@ int main(){
     int size = 8;
 
     cout<<"Total Negative Numbers: "
-        <<searchInsert(arr,8);
+        <<countNegative(arr,8);
     
     return 0;
 }
